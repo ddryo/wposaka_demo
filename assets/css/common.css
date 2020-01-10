@@ -78,11 +78,6 @@
 
 /* ボタン */
 
-.wp-block-button {
-
-	/* スタイル：デフォルト */
-}
-
 .wp-block-button .wp-block-button__link {
 	min-width: 10em;
 	letter-spacing: 1px;
@@ -102,12 +97,6 @@
 }
 
 /* 見出し2 */
-
-.editor-styles-wrapper,
-.entry-content {
-
-	/* 見出し3 */
-}
 
 .editor-styles-wrapper h2,
 .entry-content h2 {
