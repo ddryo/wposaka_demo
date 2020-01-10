@@ -1,0 +1,63 @@
+/* メインタイトル */
+.home .entry-header {
+	display: none !important;
+}
+
+/* 最初のブロック */
+.home .first-block {
+	width: calc(100% - 20rem);
+	height: calc(100vh - 100px - 4rem);
+	min-height: 400px;
+	margin-right: 4rem;
+	overflow: visible;
+	text-align: right;
+	opacity: 0;
+	animation: FadeIn 1s ease .25s 1 normal both;
+
+	&::before {
+
+		background-image: linear-gradient(90deg, #8affff 0%, #38aff3 100%) !important;
+	}
+
+	p {
+		max-width: 100% !important;
+	}
+
+	* {
+		color: $color-text;
+		text-align: left !important;
+	}
+
+
+	.main-message {
+		position: relative;
+		left: -2rem;
+		max-width: 100% !important;
+		font-weight: 900;
+		font-size: 10vw;
+		font-family: "Poppins", sans-serif !important;
+		letter-spacing: 1px;
+		opacity: 0;
+		animation: FadeInFromLeft 1s ease .5s 1 normal both;
+
+		@include tab {
+			padding-left: .25em;
+			font-size: 100px;
+			border-left: solid 1px;
+		}
+	}
+
+	.main-message + p {
+		position: relative;
+		left: -2rem;
+		opacity: 0;
+		animation: FadeInFromLeft 1s ease 1s 1 normal both;
+	}
+
+	.wp-block-cover__inner-container {
+
+		/* width: calc(100% - 16rem); */
+		margin-left: -12em;
+	}
+
+}

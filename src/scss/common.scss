@@ -1,0 +1,35 @@
+@charset "utf-8";
+@import "foundation/**";
+
+/*
+    Google Fonts
+    Noto+Sans+JP & Open+Sans : body
+    Poppins:900 : Main Visual
+    Libre+Baskerville: Heading
+ */
+@import url(https://fonts.googleapis.com/css?family=Poppins:900|Libre+Baskerville|Noto+Sans+JP|Open+Sans&display=swap);
+
+/* 背景色 上書き */
+.has-subtle-background-background-color {
+	background-color: #f7f7f7 !important;
+}
+
+/* Utility */
+.myfont {
+	font-family: "Dancing Script", cursive !important;
+}
+
+.u-fz-s {
+	font-size: .8em !important;
+}
+
+.u-card {
+	background-color: #fff;
+	border-radius: 8px !important;
+	box-shadow:
+		0 8px 16px 0 rgba(50, 50, 93, .12),
+		0 2px 6px 0 rgba(0, 0, 0, .1) !important;
+}
+
+@import "common/**";
+

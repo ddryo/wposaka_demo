@@ -1,0 +1,46 @@
+@charset "utf-8";
+@import "foundation/**";
+
+
+/* Twenty Twentyのフォント指定がうざすぎて 「*」 使ってる */
+* {
+	color: $color-text;
+	font-weight: normal;
+	font-family: "Open Sans", "Noto Sans JP", sans-serif !important;
+}
+
+/* 管理画面のアイコンが消えてしまうので再度上書き */
+#wpadminbar *::before {
+	font-family: dashicons;
+}
+
+/* コンテンツの最大幅 */
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+	max-width: 800px;
+}
+
+/* alignwide */
+.entry-content > .alignwide {
+
+	@include pc {
+		width: 1200px;
+		max-width: 1200px;
+	}
+}
+
+/* Utility */
+.u-mt-0 {
+	margin-top: 0 !important;
+}
+
+.u-mb-0 {
+	margin-bottom: 0 !important;
+}
+
+.u-m-y-0 {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+@import "parts/**";
+

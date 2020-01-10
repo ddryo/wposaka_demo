@@ -1,0 +1,25 @@
+
+/* ヘッダー */
+#site-header {
+	display: flex;
+	align-items: center;
+	height: 100px;
+}
+
+#site-header .header-inner {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#site-header .site-description {
+	display: none;
+}
+
+#site-header .custom-logo {
+	width: 240px;
+	height: auto !important;
+}
+
+#site-header .search-toggle .toggle-text {
+	display: none;
+}

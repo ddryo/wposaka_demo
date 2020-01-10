@@ -1,0 +1,32 @@
+/* Service */
+#sec-service {
+
+	.wp-block-image {
+		height: 200px;
+
+		img {
+			height: 100%;
+			margin: 0 auto;
+			object-fit: contain;
+		}
+
+	}
+
+	.wp-block-column {
+		padding: 2rem 2.4rem;
+		background: #fff;
+
+		.wp-block-image:first-child {
+			margin-top: 0 !important;
+		}
+
+		:last-child {
+			padding-bottom: 1rem;
+		}
+
+
+	}
+
+
+}
+

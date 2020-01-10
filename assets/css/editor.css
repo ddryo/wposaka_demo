@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+/* エディターの幅を拡張 */
+.wp-block {
+	max-width: 800px;
+}
+
+.editor-styles-wrapper .wp-block * {
+	font-family: "Open Sans", "Noto Sans JP", sans-serif;
+}

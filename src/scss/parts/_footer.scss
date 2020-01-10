@@ -1,0 +1,35 @@
+/* フッター */
+
+.home .footer-nav-widgets-wrapper {
+	margin-top: 0;
+	border-top: none;
+
+	.textwidget p {
+		font-size: 14px;
+	}
+
+	.textwidget img {
+		width: 240px;
+		height: auto;
+		margin: 0;
+	}
+}
+
+.footer-widgets {
+
+	&.column-two {
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	&.column-two .widget_nav_menu {
+		width: 50%;
+		margin-top: 0;
+	}
+
+	.widget_nav_menu a {
+		color: inherit !important;
+	}
+
+}

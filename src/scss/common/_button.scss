@@ -1,0 +1,22 @@
+/* ボタン */
+.wp-block-button {
+
+	.wp-block-button__link {
+		min-width: 10em;
+		letter-spacing: 1px;
+		text-decoration: none !important;
+	}
+
+	/* スタイル：デフォルト */
+	&:not(.is-style-outline) .wp-block-button__link {
+		background-image: linear-gradient(90deg, #95a844 0%, #1eb84c 100%) !important;
+		border-radius: 2px;
+		transition: box-shadow .25s;
+
+		&:hover {
+			box-shadow: 0 8px 16px 0 rgba(50, 50, 93, .2), 0 2px 4px 0 rgba(0, 0, 0, .1);
+		}
+	}
+
+}
+

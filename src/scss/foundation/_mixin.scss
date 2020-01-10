@@ -1,0 +1,23 @@
+// mobileのみ
+@mixin mobile {
+
+	@media screen and (max-width: 699px) {
+		@content;
+	}
+}
+
+//tab以上
+@mixin tab {
+
+	@media screen and (min-width: 700px) {
+		@content;
+	}
+}
+
+//pc以上
+@mixin pc {
+
+	@media screen and (min-width: 1220px) {
+		@content;
+	}
+}

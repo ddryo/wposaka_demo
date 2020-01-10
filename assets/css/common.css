@@ -1,0 +1,160 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Poppins:900|Libre+Baskerville|Noto+Sans+JP|Open+Sans&display=swap);
+
+@-webkit-keyframes FadeIn {
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes FadeIn {
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes FadeInFromLeft {
+
+	100% {
+		left: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes FadeInFromLeft {
+
+	100% {
+		left: 0;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes FadeInFromBottom {
+
+	100% {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes FadeInFromBottom {
+
+	100% {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+/*
+    Google Fonts
+    Noto+Sans+JP & Open+Sans : body
+    Poppins:900 : Main Visual
+    Libre+Baskerville: Heading
+ */
+
+/* 背景色 上書き */
+
+.has-subtle-background-background-color {
+	background-color: #f7f7f7 !important;
+}
+
+/* Utility */
+
+.myfont {
+	font-family: "Dancing Script", cursive !important;
+}
+
+.u-fz-s {
+	font-size: .8em !important;
+}
+
+.u-card {
+	background-color: #fff;
+	border-radius: 8px !important;
+	box-shadow: 0 8px 16px 0 rgba(50, 50, 93, .12), 0 2px 6px 0 rgba(0, 0, 0, .1) !important;
+}
+
+/* ボタン */
+
+.wp-block-button {
+
+	/* スタイル：デフォルト */
+}
+
+.wp-block-button .wp-block-button__link {
+	min-width: 10em;
+	letter-spacing: 1px;
+	text-decoration: none !important;
+}
+
+.wp-block-button:not(.is-style-outline) .wp-block-button__link {
+	background-image: -webkit-gradient(linear, left top, right top, from(#95a844), to(#1eb84c)) !important;
+	background-image: linear-gradient(90deg, #95a844 0%, #1eb84c 100%) !important;
+	border-radius: 2px;
+	-webkit-transition: box-shadow .25s;
+	transition: box-shadow .25s;
+}
+
+.wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
+	box-shadow: 0 8px 16px 0 rgba(50, 50, 93, .2), 0 2px 4px 0 rgba(0, 0, 0, .1);
+}
+
+/* 見出し2 */
+
+.editor-styles-wrapper,
+.entry-content {
+
+	/* 見出し3 */
+}
+
+.editor-styles-wrapper h2,
+.entry-content h2 {
+	position: relative !important;
+	padding-bottom: .25em;
+	font-weight: 400;
+	font-family: "Libre Baskerville", serif !important;
+	letter-spacing: 1px;
+}
+
+.editor-styles-wrapper h2::before,
+.entry-content h2::before {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	display: block;
+	width: 2rem;
+	height: 2px;
+	margin: 0 auto;
+	background-color: currentColor;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	content: "";
+}
+
+.editor-styles-wrapper h3,
+.entry-content h3 {
+	position: relative !important;
+	padding-bottom: .25em;
+	font-weight: bold;
+	font-size: 2rem;
+	letter-spacing: .5px;
+}
+
+/* Flow */
+
+.sec-flow h3 em {
+	margin-right: .2em;
+	color: #95a844;
+	font-size: 1.6em;
+	font-family: "Libre Baskerville", serif !important;
+}
+
+@media screen and (min-width: 700px) {
+
+	.editor-styles-wrapper h3,
+	.entry-content h3 {
+		font-size: 2.8rem;
+	}
+}

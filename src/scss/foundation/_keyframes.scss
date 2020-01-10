@@ -1,0 +1,23 @@
+@keyframes FadeIn {
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+@keyframes FadeInFromLeft {
+
+	100% {
+		left: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes FadeInFromBottom {
+
+	100% {
+		top: 0;
+		opacity: 1;
+	}
+}

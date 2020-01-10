@@ -1,0 +1,66 @@
+
+/* プラン */
+#sec-plans {
+	margin: 0;
+
+	.wp-block-columns {
+		padding: 0;
+	}
+
+	.wp-block-column {
+		position: relative;
+		flex-basis: 50% !important;
+		transition: opacity .25s;
+
+		* {
+			width: 100%;
+			max-width: 100%;
+			margin: 0;
+			color: #fff;
+		}
+	}
+
+
+	.wp-block-image {
+		height: 25vw;
+		overflow: hidden;
+
+		& > a {
+			display: block;
+			height: 100%;
+		}
+
+		img {
+			height: 100%;
+			object-fit: cover;
+			transition: transform .25s;
+		}
+	}
+
+
+	.wp-block-column:hover {
+		opacity: .7;
+
+		.wp-block-image img {
+			transform: scale(1.05);
+		}
+	}
+
+
+	.wp-block-group {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		padding: 0 4rem;
+		text-align: center;
+		background-color: rgba(6, 14, 10, .4);
+		pointer-events: none;
+	}
+
+
+}

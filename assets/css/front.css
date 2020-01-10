@@ -1,0 +1,455 @@
+@charset "UTF-8";
+
+@-webkit-keyframes FadeIn {
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes FadeIn {
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes FadeInFromLeft {
+
+	100% {
+		left: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes FadeInFromLeft {
+
+	100% {
+		left: 0;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes FadeInFromBottom {
+
+	100% {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes FadeInFromBottom {
+
+	100% {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+/* Twenty Twentyのフォント指定がうざすぎて 「*」 使ってる */
+
+* {
+	color: #44494f;
+	font-weight: normal;
+	font-family: "Open Sans", "Noto Sans JP", sans-serif !important;
+}
+
+/* 管理画面のアイコンが消えてしまうので再度上書き */
+
+#wpadminbar *::before {
+	font-family: dashicons;
+}
+
+/* コンテンツの最大幅 */
+
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+	max-width: 800px;
+}
+
+/* alignwide */
+
+/* Utility */
+
+.u-mt-0 {
+	margin-top: 0 !important;
+}
+
+.u-mb-0 {
+	margin-bottom: 0 !important;
+}
+
+.u-m-y-0 {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+/* メインタイトル */
+
+.home .entry-header {
+	display: none !important;
+}
+
+/* 最初のブロック */
+
+.home .first-block {
+	width: calc(100% - 20rem);
+	height: calc(100vh - 100px - 4rem);
+	min-height: 400px;
+	margin-right: 4rem;
+	overflow: visible;
+	text-align: right;
+	opacity: 0;
+	-webkit-animation: fadein 1s ease .25s 1 normal both;
+	animation: FadeIn 1s ease .25s 1 normal both;
+}
+
+.home .first-block::before {
+	background-image: -webkit-gradient(linear, left top, right top, from(#8affff), to(#38aff3)) !important;
+	background-image: linear-gradient(90deg, #8affff 0%, #38aff3 100%) !important;
+}
+
+.home .first-block p {
+	max-width: 100% !important;
+}
+
+.home .first-block * {
+	color: #44494f;
+	text-align: left !important;
+}
+
+.home .first-block .main-message {
+	position: relative;
+	left: -2rem;
+	max-width: 100% !important;
+	font-weight: 900;
+	font-size: 10vw;
+	font-family: "Poppins", sans-serif !important;
+	letter-spacing: 1px;
+	opacity: 0;
+	-webkit-animation: fadeinfromleft 1s ease .5s 1 normal both;
+	animation: FadeInFromLeft 1s ease .5s 1 normal both;
+}
+
+.home .first-block .main-message + p {
+	position: relative;
+	left: -2rem;
+	opacity: 0;
+	-webkit-animation: fadeinfromleft 1s ease 1s 1 normal both;
+	animation: FadeInFromLeft 1s ease 1s 1 normal both;
+}
+
+.home .first-block .wp-block-cover__inner-container {
+
+	/* width: calc(100% - 16rem); */
+	margin-left: -12em;
+}
+
+/* フッター */
+
+.home .footer-nav-widgets-wrapper {
+	margin-top: 0;
+	border-top: none;
+}
+
+.home .footer-nav-widgets-wrapper .textwidget p {
+	font-size: 14px;
+}
+
+.home .footer-nav-widgets-wrapper .textwidget img {
+	width: 240px;
+	height: auto;
+	margin: 0;
+}
+
+.footer-widgets.column-two {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+}
+
+.footer-widgets.column-two .widget_nav_menu {
+	width: 50%;
+	margin-top: 0;
+}
+
+.footer-widgets .widget_nav_menu a {
+	color: inherit !important;
+}
+
+/* ヘッダー */
+
+#site-header {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	height: 100px;
+}
+
+#site-header .header-inner {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#site-header .site-description {
+	display: none;
+}
+
+#site-header .custom-logo {
+	width: 240px;
+	height: auto !important;
+}
+
+#site-header .search-toggle .toggle-text {
+	display: none;
+}
+
+/* ナビ */
+
+.primary-menu > li > a,
+.footer-widgets a {
+	color: inherit !important;
+}
+
+li > a {
+	text-decoration: none !important;
+}
+
+/* Policy */
+
+#sec-policy {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#sec-policy .alignfull .wp-block-media-text__media {
+	height: 80vh;
+}
+
+#sec-policy .alignfull .wp-block-media-text__media img {
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+#sec-policy .wp-block-media-text * {
+	max-width: 100%;
+}
+
+#sec-policy .wp-block-media-text:not(.has-media-on-the-right) {
+	grid-template-columns: 60% auto;
+}
+
+#sec-policy .wp-block-media-text:not(.has-media-on-the-right) .wp-block-group {
+	margin-left: -10rem;
+}
+
+/* 会社情報 */
+
+#sec-company {
+	position: relative;
+	background: url(https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80) no-repeat center/cover;
+
+	/* スタイル：アウトライン */
+}
+
+#sec-company::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #090e0a;
+	opacity: .7;
+	content: "";
+}
+
+#sec-company .wp-block-columns {
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+#sec-company .wp-block-table table,
+#sec-company .wp-block-table th,
+#sec-company .wp-block-table td {
+	vertical-align: top;
+	border: none;
+}
+
+#sec-company .wp-block-group__inner-container {
+	position: relative;
+	z-index: 1;
+}
+
+#sec-company .wp-block-group__inner-container * {
+	color: #fff;
+}
+
+#sec-company .wp-block-button__link {
+	-webkit-transition: color .25s, border-color .25s, background-color .25s;
+	transition: color .25s, border-color .25s, background-color .25s;
+}
+
+#sec-company .wp-block-button__link:hover {
+	color: #090e0a;
+	background-color: #fff;
+	border-color: #fff;
+}
+
+/* Flow */
+
+#sec-flow .wp-block-media-text {
+	margin-top: 8rem;
+}
+
+#sec-flow h3 {
+	margin-bottom: .5em;
+}
+
+#sec-flow h3 em {
+	margin-right: .2em;
+	color: #95a844;
+	font-size: 1.6em;
+
+	/* display: block; */
+	font-family: "Libre Baskerville", serif !important;
+}
+
+#sec-flow .wp-block-media-text p {
+	padding-left: .5em;
+}
+
+/* プラン */
+
+#sec-plans {
+	margin: 0;
+}
+
+#sec-plans .wp-block-columns {
+	padding: 0;
+}
+
+#sec-plans .wp-block-column {
+	position: relative;
+	flex-basis: 50% !important;
+	-webkit-transition: opacity .25s;
+	transition: opacity .25s;
+}
+
+#sec-plans .wp-block-column * {
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	color: #fff;
+}
+
+#sec-plans .wp-block-image {
+	height: 25vw;
+	overflow: hidden;
+}
+
+#sec-plans .wp-block-image > a {
+	display: block;
+	height: 100%;
+}
+
+#sec-plans .wp-block-image img {
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-webkit-transition: -webkit-transform .25s;
+	transition: -webkit-transform .25s;
+	transition: transform .25s;
+	transition: transform .25s, -webkit-transform .25s;
+}
+
+#sec-plans .wp-block-column:hover {
+	opacity: .7;
+}
+
+#sec-plans .wp-block-column:hover .wp-block-image img {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+#sec-plans .wp-block-group {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	padding: 0 4rem;
+	text-align: center;
+	background-color: rgba(6, 14, 10, .4);
+	pointer-events: none;
+}
+
+/* 新着記事 */
+
+#sec-posts .wp-block-latest-posts li {
+	padding: 1rem 0;
+	border-bottom: solid 1px #dcdcdc;
+}
+
+#sec-posts .wp-block-latest-posts a {
+	display: block;
+	color: #95a844;
+}
+
+#sec-posts .wp-block-latest-posts__post-excerpt {
+	font-size: .8em;
+}
+
+#sec-posts .wp-block-latest-posts__post-excerpt a {
+	display: none;
+}
+
+/* Service */
+
+#sec-service .wp-block-image {
+	height: 200px;
+}
+
+#sec-service .wp-block-image img {
+	height: 100%;
+	margin: 0 auto;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+#sec-service .wp-block-column {
+	padding: 2rem 2.4rem;
+	background: #fff;
+}
+
+#sec-service .wp-block-column .wp-block-image:first-child {
+	margin-top: 0 !important;
+}
+
+#sec-service .wp-block-column :last-child {
+	padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+
+	.home .first-block .main-message {
+		padding-left: .25em;
+		font-size: 100px;
+		border-left: solid 1px;
+	}
+}
+
+@media screen and (min-width: 1220px) {
+
+	.entry-content > .alignwide {
+		width: 1200px;
+		max-width: 1200px;
+	}
+}
