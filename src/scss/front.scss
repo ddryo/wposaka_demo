@@ -14,12 +14,13 @@
 	font-family: dashicons;
 }
 
-/* コンテンツの最大幅 */
+/* コンテンツの最大幅を 800px に上書き*/
 .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
 	max-width: 800px;
 }
 
-/* alignwide */
+
+// alignwide
 .entry-content > .alignwide {
 
 	@include pc {
@@ -28,17 +29,19 @@
 	}
 }
 
-/* Utility */
+// グループブロックの上下padding
+.entry-content > .wp-block-group.alignfull.has-background {
+	padding-top: 4em;
+	padding-bottom: 4em;
+
+}
+
+/* Utility*/
 .u-mt-0 {
 	margin-top: 0 !important;
 }
 
 .u-mb-0 {
-	margin-bottom: 0 !important;
-}
-
-.u-m-y-0 {
-	margin-top: 0 !important;
 	margin-bottom: 0 !important;
 }
 

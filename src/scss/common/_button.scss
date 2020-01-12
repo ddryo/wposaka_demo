@@ -5,6 +5,12 @@
 		min-width: 10em;
 		letter-spacing: 1px;
 		text-decoration: none !important;
+
+		@include mobile {
+			display: block;
+			margin-right: 4rem;
+			margin-left: 4rem;
+		}
 	}
 
 	// スタイル：デフォルト

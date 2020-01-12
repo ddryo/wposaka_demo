@@ -2,8 +2,27 @@
 #sec-flow {
 
 	.wp-block-media-text {
-		margin-top: 8rem;
+
+		@include pc {
+			margin-top: 8rem;
+		}
+
+		@include mobile {
+
+			&__media {
+				margin: 0 4rem;
+			}
+
+			&__content {
+
+				.wp-block-group {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+			}
+		}
 	}
+
 
 	h3 {
 		margin-bottom: .5em;

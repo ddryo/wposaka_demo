@@ -1,5 +1,15 @@
+// Twenty Twentyに合わせた数値
+
 // mobileのみ
 @mixin mobile {
+
+	@media screen and (max-width: 600px) {
+		@content;
+	}
+}
+
+// tab未満
+@mixin sp {
 
 	@media screen and (max-width: 699px) {
 		@content;
@@ -16,6 +26,13 @@
 
 //pc以上
 @mixin pc {
+
+	@media screen and (min-width: 1000px) {
+		@content;
+	}
+}
+
+@mixin pc_wide {
 
 	@media screen and (min-width: 1220px) {
 		@content;

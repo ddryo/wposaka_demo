@@ -1,0 +1,14 @@
+// 画像を右配置かつ「モバイルでは縦に並べる」を指定した時の並び順を、画像が先にくる様に上書き
+@include mobile {
+
+	.wp-block-media-text.is-stacked-on-mobile.has-media-on-the-right {
+
+		.wp-block-media-text__media {
+			grid-row: 1;
+		}
+
+		.wp-block-media-text__content {
+			grid-row: 2;
+		}
+	}
+}
