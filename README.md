@@ -4,6 +4,21 @@
 
 今後の制作で、自由に使いまわしていただいてOKです。
 
+## 復習用メモ
+
+### 当日に使用したスライド
+https://docs.google.com/presentation/d/e/2PACX-1vTqCOQekdv2dIzZVD5csrqXvtPIvbnrguzFA2htA5837f_IdRjagRBSQi8S3peawwIUb9slD5LVKDCD/pub?start=false&loop=false&delayms=3000
+
+
+### 解説用のデモサイト
+
+WEB上に公開しておきました。（スマホ表示もある程度整えました。）
+
+http://demo.loos-web-studio.com/
+
+### 伝え忘れ
+メディアと文章ブロックは「モバイルでは縦に並べる」設定項目があるので、こちらも活用するとスマホのレイアウトも組みやすくなります。
+
 
 ## How to use
 zipダウンロードしたものをプラグインとしてインストールしてください。
