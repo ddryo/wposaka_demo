@@ -6,24 +6,23 @@
 
 ## 当日の復習用メモ
 
-**当日に使用したスライド**
+**▼ 当日に使用したスライド**
 
 https://docs.google.com/presentation/d/e/2PACX-1vTqCOQekdv2dIzZVD5csrqXvtPIvbnrguzFA2htA5837f_IdRjagRBSQi8S3peawwIUb9slD5LVKDCD/pub?start=false&loop=false&delayms=3000
 
 
-**解説用のデモサイト**
+**▼  解説用のデモサイト**
 
 WEB上に公開しておきました。（スマホ表示もある程度整えました。）
 
 http://demo.loos-web-studio.com/
 
-**CSSが何も書かれていない、練習用プラグイン**
+**▼ CSSが何も書かれていない、練習用プラグイン**
 
-▼ 自由にお使いください
-[wposaka_demo_plane.zip](https://github.com/ddryo/wposaka_demo/files/4052321/wposaka_demo_plane.zip)
+自由にお使いください：[wposaka_demo_plane.zip](https://github.com/ddryo/wposaka_demo/files/4052321/wposaka_demo_plane.zip)
 
 
-**伝え忘れ**
+**▼ 伝え忘れ**
 
 - メディアと文章ブロックは「モバイルでは縦に並べる」設定項目があるので、こちらも活用するとスマホのレイアウトも組みやすくなります。
 - editor.cssの中身を説明していなかったのですが、ファイル内にコメントつけました。
