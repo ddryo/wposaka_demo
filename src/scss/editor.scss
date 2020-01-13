@@ -1,13 +1,11 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 /* デフォルトだとコンテンツの幅が狭くて編集しづらいので、エディターの幅を拡張する。 */
-
 .wp-block {
 	max-width: 800px;
 }
 
 /* フォントを変える。（フロント側と統一） */
-
 .editor-styles-wrapper .wp-block * {
 	font-family: "Open Sans", "Noto Sans JP", sans-serif;
 }
