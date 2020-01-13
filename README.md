@@ -17,6 +17,12 @@ WEB上に公開しておきました。（スマホ表示もある程度整え�
 
 http://demo.loos-web-studio.com/
 
+**CSSが何も書かれていない、練習用プラグイン**
+
+▼ 自由にお使いください
+[wposaka_demo_plane.zip](https://github.com/ddryo/wposaka_demo/files/4052321/wposaka_demo_plane.zip)
+
+
 **伝え忘れ**
 
 - メディアと文章ブロックは「モバイルでは縦に並べる」設定項目があるので、こちらも活用するとスマホのレイアウトも組みやすくなります。
