@@ -11,6 +11,7 @@ const autoprefixer = require( 'gulp-autoprefixer' ); // プレフィックス付
 const gcmq = require( 'gulp-group-css-media-queries' ); // media query整理
 const cleanCSS = require( 'gulp-clean-css' );
 const gulpStylelint = require('gulp-stylelint');
+
 // webpack
 // const webpack = require( 'webpack' );
 // const webpackStream = require( 'webpack-stream' );
@@ -78,7 +79,4 @@ const watchFiles = ( cb ) => {
 	cb();
 };
 
-//exports.default = series( myBrowserInit, parallel( watchFiles ) );
 exports.default = watchFiles;
-// exports.webpack = doWebpack;
-exports.scss = compileScss;
